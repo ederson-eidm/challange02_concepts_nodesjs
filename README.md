@@ -8,7 +8,7 @@
 
 
 <p align="center">
-  <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-sobre-o-desafio">About Challange</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -73,9 +73,11 @@ For this challenge we have the following tests:
 ## :memo: License
 
 This project is under the MIT license.
-Made based on the rocketseat course, Bootcamp GoStack. rocketseat.com.br
+Made based on the rocketseat course, Bootcamp GoStack.[rocketseat]
 
 
 ---
 
 Done with💜 by EIDM 
+
+[rocketseat]: https://rocketseat.com.br
