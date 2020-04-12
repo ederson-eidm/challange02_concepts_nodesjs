@@ -24,9 +24,9 @@ Structures of project
 
 ### - backend
 
-### - path - frontend
+### - frontend
 
-### - mobile - mobile
+### - mobile
 
 ## :memo: License
 
