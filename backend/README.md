@@ -8,11 +8,11 @@
 
 
 <p align="center">
-  <a href="#rocket-sobre-o-desafio">About Challange</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#rocket-about-challange">About Challenge</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licence">Licença</a>
 </p>
 
-## :rocket: About Challange
+## :rocket: About Challenge
 
 This will be an application to store repositories in your portfolio, which will allow the creation, listing, update and removal of the repositories, and also allow the repositories to receive "likes".
 
