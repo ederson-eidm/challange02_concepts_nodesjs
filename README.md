@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="#rocket-about-challenge">About Challenge</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#paths-project-structure">Structure</a>
+  <a href="#project-structure">Structure</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">Licença</a>
 </p>
 
@@ -18,7 +18,7 @@
 This will be an application to store repositories in your portfolio, which will allow the creation, listing, update and removal of the repositories, and also allow the repositories to receive "likes".
 
 
-## :path: Project Structure
+## Project Structure
 
 Structures of project
 
