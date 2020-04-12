@@ -8,9 +8,9 @@
 
 
 <p align="center">
-  <a href="#rocket-sobre-o-desafio">About Challange</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-  <a href="#paths">Structure</a>
+  <a href="#rocket-about">About Challange</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licence">Licença</a>
+  <a href="#paths-structure">Structure</a>
 </p>
 
 ## :rocket: About Challange
