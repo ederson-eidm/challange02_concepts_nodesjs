@@ -8,17 +8,17 @@
 
 
 <p align="center">
-  <a href="#rocket-about">About Challange</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licence">Licença</a>
-  <a href="#paths-structure">Structure</a>
+  <a href="#rocket-about-challenge">About Challenge</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#paths-project-structure">Structure</a>
+  <a href="#memo-license">Licença</a>
 </p>
 
-## :rocket: About Challange
+## :rocket: About Challenge
 
 This will be an application to store repositories in your portfolio, which will allow the creation, listing, update and removal of the repositories, and also allow the repositories to receive "likes".
 
 
-## :paths: Project Structure
+## :path: Project Structure
 
 ### - backend
 
