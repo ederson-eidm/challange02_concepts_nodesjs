@@ -12,7 +12,7 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-## :rocket: Sobre o desafio
+## :rocket: About Challange
 
 This will be an application to store repositories in your portfolio, which will allow the creation, listing, update and removal of the repositories, and also allow the repositories to receive "likes".
 
