@@ -9,73 +9,73 @@
 
 <p align="center">
   <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
 ## :rocket: Sobre o desafio
 
-Nesse desafio, você deve criar uma aplicação para treinar o que você aprendeu até agora no Node.js!
-
-Essa será uma aplicação para armazenar repositórios do seu portfólio, que irá permitir a criação, listagem, atualização e remoção dos repositórios, e além disso permitir que os repositórios possam receber "likes".
+This will be an application to store repositories in your portfolio, which will allow the creation, listing, update and removal of the repositories, and also allow the repositories to receive "likes".
 
 
-### Rotas da aplicação
+### Application routes
 
-Agora que você já está com o template clonado, e pronto para continuar, você deve abrir o arquivo app.js, e completar onde não possui código com o código para atingir os objetivos de cada rota.
 
-- **`POST /repositories`**: A rota deve receber `title`, `url` e `techs` dentro do corpo da requisição, sendo a URL o link para o github desse repositório. Ao cadastrar um novo projeto, ele deve ser armazenado dentro de um objeto no seguinte formato: `{ id: "uuid", title: 'Desafio Node.js', url: 'http://github.com/...', techs: ["Node.js", "..."], likes: 0 }`; Certifique-se que o ID seja um UUID, e de sempre iniciar os likes como 0.
+- **`POST /repositories`**: The route must receive `title`,` url` and `techs` within the body of the request, the URL being the link to the github of this repository. When registering a new project, it must be stored inside an object in the following format: `{ id: "uuid", title: 'Desafio Node.js', url: 'http://github.com/...', techs: ["Node.js", "..."], likes: 0 }`; 
 
-- **`GET /repositories`**: Rota que lista todos os repositórios;
+Make sure the ID is a UUID, and always start the likes as 0.
 
-- **`PUT /repositories/:id`**: A rota deve alterar apenas o `title`, a `url` e as `techs` do repositório que possua o `id` igual ao `id` presente nos parâmetros da rota;
+- **`GET /repositories`**: Route that lists all repositories;
 
-- **`DELETE /repositories/:id`**: A rota deve deletar o repositório com o `id` presente nos parâmetros da rota;
+- **`PUT /repositories/:id`**: The route should only change the `title`,` url` and `techs` of the repository that has the` id` equal to the `id` present in the parameters of the route;
 
-- **`POST /repositories/:id/like`**: A rota deve aumentar o número de likes do repositório específico escolhido através do `id` presente nos parâmetros da rota, a cada chamada dessa rota, o número de likes deve ser aumentado em 1;
+- **`DELETE /repositories/:id`**: The route must delete the repository with the `id` present in the route parameters;
 
-**Dica**: Acima utilizamos `POST` em uma rota, mesmo ela alterando o número de likes do repositório sem criar nada diretamente.
+- **`POST /repositories/:id/like`**: The route must increase the number of likes from the specific repository chosen through the `id` present in the route parameters, at each call of this route, the number of likes must be increased by 1;
 
-Se dividirmos semânticamente as responsabilidades da nossa aplicação em entidades, o `like` seria uma entidade, e `repository` seria outra entidade.
+**Tip**: Above we use `POST` in a route, even if it changes the number of likes in the repository without creating anything directly.
 
-Com essa separação, temos diferentes regras de negócio para cada entidade, assim, ao chamar a rota de `like` e adicionamos apenas um like, podemos interpretar que estamos criando um novo like, e não atualizando os likes.
+If we semantically divide the responsibilities of our application into entities, the like would be an entity, and the repository would be another entity.
 
-Então por que não usar `PUT` no lugar de `POST`? Justamente por estarmos "criando" UM novo like, e não atualizando o número de likes para qualquer outro valor.
+With this separation, we have different business rules for each entity, so by calling the route 'like' and adding only one like, we can interpret that we are creating a new like, and not updating the likes.
 
-Talvez fique difícil enxergar por ser apenas um número, mas pense que cada like seja salvo em uma tabela no banco junto do usuário que realizou esse like. Agora fica mais claro que você está criando um novo like, certo?
+So why not use `PUT` instead of` POST`? Precisely because we are "creating" A new like, and not updating the number of likes to any other value.
 
-Bons estudos <3
+It may be difficult to see because it is just a number, but think that each like is saved in a table in the bank with the user who performed this like. Now it’s clearer that you’re creating a new like, right?
 
-### Específicação dos testes
 
-Em cada teste, tem uma breve descrição no que sua aplicação deve cumprir para que o teste passe.
+### Testing specification
 
-Caso você tenha dúvidas quanto ao que são os testes, e como interpretá-los, dé uma olhada em **[nosso FAQ](https://github.com/Rocketseat/bootcamp-gostack-desafios/tree/master/faq-desafios).**
+In each test, you have a brief description of what your application must do in order for the test to pass.
 
-Para esse desafio temos os seguintes testes:
 
-- **`should be able to create a new repository`**: Para que esse teste passe, sua aplicação deve permitir que um repositório seja criado, e retorne um json com o projeto criado.
+For this challenge we have the following tests:
 
-- **`should be able to list the repositories`**: Para que esse teste passe, sua aplicação deve permitir que seja retornado um array com todos os repositórios que foram criados até o momento.
+- **`should be able to create a new repository`**: For this test to pass, your application must allow a repository to be created, and return a json with the created project.
 
-- **`should be able to update repository`**: Para que esse teste passe, sua aplicação deve permitir que sejam alterados apenas os campos `url`, `title` e `techs`.
+- **`should be able to list the repositories`**: For this test to pass, your application must allow an array to be returned with all the repositories that have been created so far.
 
-- **`should not be able to update a repository that does not exist`**: Para que esse teste passe, você deve validar na sua rota de update se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status `400`.
+- **`should be able to update repository`**: For this test to pass, your application must allow only the `url`,` title` and `techs` fields to be changed.
 
-- **`should not be able to update repository likes manually`**: Para que esse teste passe, você não deve permitir que sua rota de update altere diretamente os likes desse repositório, mantendo o mesmo número de likes que o repositório já possuia antes da atualização. Isso porque o único lugar que deve atualizar essa informação é a rota responsável por aumentar o número de likes.
+- **`should not be able to update a repository that does not exist`**: For this test to pass, you must validate in your update route whether the repository id sent by the url exists or not. If not, return an error with status `400`.
 
-- **`should be able to delete the repository`**: Para que esse teste passe, você deve permitir que a sua rota de delete exclua um projeto, e ao fazer a exclusão, ele retorne uma resposta vazia, com status `204`.
+- **`should not be able to update repository likes manually`**: For this test to pass, you must not allow your update route to directly change the likes of that repository, maintaining the same number of likes that the repository already had before the update. This is because the only place that should update this information is the route responsible for increasing the number of likes.
 
-- **`should not be able to delete a repository that does not exist`**: Para que esse teste passe, você deve validar na sua rota de delete se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status `400`.
+- **`should be able to delete the repository`**: For this test to pass, you must allow your delete route to delete a project, and when you delete it, it returns an empty response, with status `204`.
 
-- **`should be able to give a like to the repository`**: Para que esse teste passe, sua aplicação deve permitir que um repositório com o id informado possa receber likes. O valor de likes deve ser incrementado em 1 a cada requisição, e como resultado, retornar um json contendo o repositório com o número de likes atualizado.
+- **`should not be able to delete a repository that does not exist`**: For this test to pass, you must validate on your delete route whether the repository id sent by the url exists or not. If not, return an error with status `400`.
 
-- **`should not be able to like a repository that does not exist`**: Para que esse teste passe, você deve validar na sua rota de like se o id do repositório enviado pela url existe ou não. Caso não exista, retornar um erro com status `400`.
+- **`should be able to give a like to the repository`**: For this test to pass, your application must allow a repository with the given id to receive likes. The value of likes must be increased by 1 with each request, and as a result, return a json containing the repository with the number of likes updated.
 
-## :memo: Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+- **`should not be able to like a repository that does not exist`**: For this test to pass, you must validate on your like route whether the repository id sent by the url exists or not. If not, return an error with status `400`.
+
+
+## :memo: License
+
+This project is under the MIT license.
+Made based on the rocketseat course, Bootcamp GoStack. rocketseat.com.br
+
 
 ---
 
-Feito com 💜 by EIDM 
+Done with💜 by EIDM 
