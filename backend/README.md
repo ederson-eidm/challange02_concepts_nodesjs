@@ -2,14 +2,14 @@
 <img alt="GoStack" src="https://storage.googleapis.com/golden-wind/bootcamp-gostack/header-desafios.png" />
 
 <h3 align="center">
-  Challange 02: Concepts  Node.js
+  Challange : Concepts  Node.js
 </h3>
 
 
 
 <p align="center">
   <a href="#rocket-about-challenge">About Challenge</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">Licença</a>
+  <a href="#memo-license">License</a>
 </p>
 
 ## :rocket: About Challenge
