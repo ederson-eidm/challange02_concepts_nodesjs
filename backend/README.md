@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="#rocket-about-challenge">About Challenge</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-license">Licença</a>
+  <a href="#memo-license">License</a>
 </p>
 
 ## :rocket: About Challenge
