@@ -22,7 +22,7 @@ This will be an application to store repositories in your portfolio, which will 
 
 Structures of project
 
-### /backend
+### - backend
 
 ### - frontend
 
